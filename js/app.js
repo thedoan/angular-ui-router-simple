@@ -35,6 +35,21 @@ angular.module("app", ['ui.router']).
 				customData1: 5,
 				customData2: "blue"
 			}  
+		}).state('contacts.list', {
+			templateUrl: 'templates/contact-list.html',
+			controller: function($scope) {
+				$scope.title = "Contact list";
+			}
+		}).state('contacts.list.contactdetail', {
+			url: ":contactName",
+			templateUrl: 'templates/contact-detail.html',
+			controller: function($scope, $stateParams) {
+				var contactName = $stateParams.contactName;
+				$scope.title = "Contact Detail";
+				$scope.contact = $scope.contacts.find(function(contact) {
+					return contact.name === contactName;	
+				});
+			}
 		});
 		$stateProvider.state('home', {
 			template: '<h1>Home Page</h1>'

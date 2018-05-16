@@ -1,0 +1,20 @@
+<div>
+<h2>{{title}}</h2>
+<ul>
+	<li ng-repeat="contact in contacts">
+		<a href="#" ui-sref="contacts.list.contactdetail({contactName: contact.name})">
+			{{contact.name}} 	
+		</a>
+	</li>
+</ul>
+
+<div ui-view></div>
+
+<h3>Your custom data:</h3>
+<ul>
+	<li>custom data 1: {{customData1}}</li>
+	<li>custom data 2: {{customData2}}</li>
+</ul>
+
+</div>
+
