@@ -1,0 +1,24 @@
+{
+  "name": "angular-ui-router-simple",
+  "version": "1.0.0",
+  "description": "angular-ui-router-simple for learning pupopse",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsprodotcom/ui-router-modals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsprodotcom/ui-router-modals/issues"
+  },
+  "homepage": "https://github.com/jsprodotcom/ui-router-modals#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
